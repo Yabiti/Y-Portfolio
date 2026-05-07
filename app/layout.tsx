@@ -4,13 +4,13 @@ import "./globals.css";
 import Navbar from "./components/general/navbar/Navbar";
 import Footer from "./components/footer/footer";
 import ScrollButton from "./components/general/scrollButton";
-import AosInit from "./components/AosInit";
 
-const poppins = Poppins({
+const poppins= Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
+
 
 export const metadata: Metadata = {
   title: "Yab's Portfolio",
@@ -23,14 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${poppins.className} antialiased bg-[#050709] text-white`}>
-        <AosInit />
-        <Navbar />
+    <html
+      lang="en" className="scroll-smooth">
+<body className={`${poppins.className} h-full antialiased bg-slate-950`}>        <Navbar />
         {children}
         <Footer />
         <ScrollButton />
-      </body>
+        </body>
     </html>
   );
 }

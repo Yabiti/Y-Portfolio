@@ -29,7 +29,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 rounded-full bg-linear-to-r from-blue-500 to-purple-600 blur-xl animate-pulse opacity-50" />
           <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-white/20">
             <Image
-              src="/images/yab.JPG"
+              src="/images/yab.jpg"
               alt="Yab Profile"
               fill
               className="object-cover"

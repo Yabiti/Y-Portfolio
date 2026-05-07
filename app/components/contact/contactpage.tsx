@@ -27,21 +27,8 @@ const contactInfo = [
 
 
 export default function ContactPage(){
-    const [loading, Setloading] = useState(false);
     const inputStyles = "px-4 py-3.5 my-4 bg-slate-800 outline-none rounded-md w-full text-gray-200 placeholder-gray-400"
 
-    const onSubmit = async (event:React.FormEvent) => {
-    event.preventDefault();
-    const formData = new FormData(event.target as HTMLFormElement);
-    formData.append("access_key", "0ce3c780-8a7a-460a-b52f-a5a32bb6deba");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await response.json();
-  };
     return(
         <section id="contact" className="py-16 lg:py-30 ">
             <div data-aos="fade-right" className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1

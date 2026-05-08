@@ -1,6 +1,6 @@
 import { RiNextjsFill } from "react-icons/ri";
 import Header from "../general/header";
-import ResumeCard from "./reumeCard";
+import ResumeCard from "./resumeCard";
 import { FaGraduationCap } from "react-icons/fa";
 import { LuPackage, LuServer } from "react-icons/lu";
 

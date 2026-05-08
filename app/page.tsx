@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <HeroSection />
       <Servicesection />
+      <Skills />
       <ResumeSection />
       <ProjectSection />
-      <Skills />
       <ContactPage />
     </>
     </AnimationLayout>

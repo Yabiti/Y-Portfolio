@@ -1,4 +1,4 @@
-import AnimationLayout from "@/layouts/animation";
+import AnimationLayout from "@/layouts/AnimationLayout";
 import ContactPage from "./components/contact/contactpage";
 import HeroSection from "./components/general/home/hero/Herosection";
 import Servicesection from "./components/general/home/services/servicesection";

@@ -42,7 +42,6 @@ export default function HeroSection() {
           <h1 data-aos="fade-up" data-aos-delay="200" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-gray-300">
             Hi, i'm a web developer
           </h1>
-          
           <Animation />
 
           <LinkButton
@@ -51,7 +50,7 @@ export default function HeroSection() {
             icon={LuArrowRight}
             rounded
             aosType="fade-up"
-            aosDelay={450}
+            aosDelay={400}
             animate
           />
         </div>

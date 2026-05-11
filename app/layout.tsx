@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/general/navbar/Navbar";
 import Footer from "./components/footer/footer";
 import ScrollButton from "./components/general/scrollButton";
+import AOSProvider from "@/layouts/AnimationLayout";
 
 const poppins= Poppins({
   variable: "--font-poppins",
@@ -25,11 +26,13 @@ export default function RootLayout({
   return (
     <html
       lang="en" className="scroll-smooth">
-      <body className={`${poppins.className} h-full antialiased bg-slate-950`}>        <Navbar />
-        {children}
-        <Footer />
-        <ScrollButton />
-        </body>
+      <body className={`${poppins.className} h-full antialiased bg-slate-950`}>
+    <AOSProvider />
+    <Navbar />
+    {children}
+    <Footer />
+    <ScrollButton />
+</body>
     </html>
   );
 }

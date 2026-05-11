@@ -8,13 +8,13 @@ import Skills from "./components/skills/skills";
 
 export default function Home() {
   return (
-    <AnimationLayout>
+    <>
       <HeroSection />
       <Servicesection />
       <ResumeSection />
       <ProjectSection />
       <Skills />
       <ContactPage />
-    </AnimationLayout>
+    </>
   );
 }

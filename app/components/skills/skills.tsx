@@ -46,8 +46,6 @@ export default function Skills() {
                     return (
                         <div 
                             key={index}
-                            data-aos="flip-right"
-                            data-aos-delay={index * 100}
                             className="bg-slate-900 text-center w-40 h-48 rounded-3xl
                             flex flex-col items-center justify-center shadow-lg transition-transform 
                             duration-300 hover:scale-110"

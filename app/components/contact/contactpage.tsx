@@ -30,7 +30,7 @@ export default function ContactPage(){
 
     return(
         <section id="contact" className="py-16 lg:py-30 ">
-            <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1
+            <div data-aos="fade-right" className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1
             lg:grid-cols-2 gap-6 lg:gap-12">
                 <div>
                     <h2 className="py-3 text-3xl md:text-4xl font-bold tracking-tight 
@@ -63,7 +63,7 @@ export default function ContactPage(){
 
                 </div>
 
-                <div>
+                <div data-aos="zoom-in">
                     <form className="rounded-lg bg-slate-900 px-4 py-8">
                         <input type="text" 
                         placeholder="Your Name" 

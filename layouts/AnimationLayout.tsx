@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
+import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function AnimationLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+
   useEffect(() => {
-    const initAOS = async () => {
-      const AOS = (await import("aos")).default;
+    AOS.init({
+      duration: 1000,
+      easing: "ease",
+      once: false,
+      anchorPlacement: "top-center",
+    });
 
-      AOS.init({
-        duration: 1000,
-        easing: "ease",
-        once: true,
-        anchorPlacement: "top-center",
-      });
-    };
-
-    initAOS();
-  }, []);
+    AOS.refreshHard();
+  }, [pathname]);
 
   return <>{children}</>;
 }

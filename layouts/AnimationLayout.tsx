@@ -1,25 +1,27 @@
 "use client"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { useEffect } from 'react'
+
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function AnimationLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
+  useEffect(() => {
+    const initAOS = async () => {
+      const AOS = (await import("aos")).default;
 
-    useEffect(() => {
-        const initAOS = async () => {
-            await import("aos")
-            AOS.init({
-                duration: 500,
-                easing: "ease",
-                once: true,
-                anchorPlacement: "top-center"
-            })
-            initAOS();
-        }
-    }, [])
-    return <>{children}</>
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        anchorPlacement: "top-center",
+      });
+    };
+
+    initAOS();
+  }, []);
+
+  return <>{children}</>;
 }
